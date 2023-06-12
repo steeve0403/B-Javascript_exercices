@@ -40,7 +40,6 @@ function rand10() {
  * @param {Number} n
  */
 
-
 function multiRand(n) {
   const result = [];
   for (let i = 0; i < n; i++) {
@@ -63,8 +62,14 @@ function multiRand(n) {
 
 //Exercice 4.5
 
-
-
+/**
+ * function for square root
+ * @param {Square root} a
+ * @returns value of square root
+ * function calcDistance between two points in a 2D
+ * @param {Points in 2d coordinate system} (x,x, y,y)
+ * @returns The value of the distance between the two points
+ */
 function calcDistance(){
 function sqr(a) {
   return a*a;
@@ -88,6 +93,7 @@ console.log("Calculating the distance between two points (1,1)-(2,2): " +Distanc
  * 0 = 1 / basic condition
  * @param {Number} a continue to find the factorial of this number by calling the same factorial function again and again until we reached 0.
  */
+
 let start, end;
 start = new Date().getTime();
 
@@ -106,12 +112,14 @@ end = new Date().getTime();
 console.log(end);
 
   //Exercice 4.6.2
+
 /**
  * If nbr = 0 the factorial will return 1
  * @param {Number} b 
  * @returns call the recursive procedure again
  */
-  function factorialB(b) {
+
+function factorialB(b) {
   
   if (b === 0)
   {
