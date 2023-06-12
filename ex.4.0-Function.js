@@ -131,9 +131,7 @@ const resultArrayMax = max([1, 5, 2, 3, 7]);
 console.log(resultArrayMax);
 
     //Part 4:
-
-
-    
+   
 const user = readlineSync.question("Enter the number of multiple function numbers to generate: ");
 
 const resultUser = multiRand(user);
