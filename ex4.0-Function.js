@@ -103,6 +103,12 @@ function multiRand(n) {
 
 //Exercice 4.4.4
 //A finir
+function multiMath() {
+  function multiRand(n)
+  function average(arr)
+  function min(arr)
+  function max(arr)
+}
 
 //Exercice 4.5
 
