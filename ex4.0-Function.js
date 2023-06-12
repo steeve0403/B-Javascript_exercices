@@ -79,10 +79,10 @@ function Distance(x1, y1, x2, y2) {
   return Math.sqrt(sqr(y2 - y1) + sqr(x2 - x1));
 }
 }
-console.log("Calcul la distance entre deux points (1,1)-(2,2): " +Distance(1, 1, 2, 2));
-console.log("Calcul la distance entre deux points (1,1)-(2,2): " +Distance(1, 1, 3, 1));
-console.log("Calcul la distance entre deux points (1,1)-(2,2): " +Distance(4, 1, 1, 1));
-console.log("Calcul la distance entre deux points (1,1)-(2,2): " +Distance(-2, 2, 2, -2));
+console.log("Calculating the distance between two points (1,1)-(2,2): " +Distance(1, 1, 2, 2));
+console.log("Calculating the distance between two points (1,1)-(2,2): " +Distance(1, 1, 3, 1));
+console.log("Calculating the distance between two points (1,1)-(2,2): " +Distance(4, 1, 1, 1));
+console.log("Calculating the distance between two points (1,1)-(2,2): " +Distance(-2, 2, 2, -2));
 
 
 //Exercice 4.6
