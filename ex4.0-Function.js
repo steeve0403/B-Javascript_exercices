@@ -56,9 +56,53 @@ function multiRand(n) {
 
 //Exercice 4.4
 
-  //Exercice 4.4.1
+    //Exercice 4.4.1
+  let = average([5, 1, 1, 1, 5]);
+  function average(arr) {
+      var b = arr.length,
+          c = 0, i;
+      for (i = 0; i < b; i++){
+        c += Number(arr[i]);
+      }
+      return c/b;
+    }
+    
+  console.log(average([5, 1, 1, 1, 5]));
 
+    //Exercice 4.4.2
+  
+    function min(arr){
+      let arrayT = arr.length;
+      minimum = arr[arrayT-1];
+      while (arrayT--){
+          if(arr[arrayT] < minimum){
+              minimum = arr[arrayT]
+          }
+      }
+      return minimum;
+  };
+  let minArray = [1, 5, 6, 2, 3];
+  let mN = min(minArray);
+  console.log(mN)
 
+    //Exercice 4.4.3
+  
+    function max(arr){
+      let arrayT = arr.length;
+      maximum = arr[arrayT-1];
+      while (arrayT--){
+          if(arr[arrayT] > maximum){
+              maximum = arr[arrayT]
+          }
+      }
+              return maximum;
+  };
+  let maxArray = [1, 5, 6, 2, 3];
+  let mX = max(maxArray);
+  console.log(mX)
+
+//Exercice 4.4.4
+//A finir
 
 //Exercice 4.5
 
