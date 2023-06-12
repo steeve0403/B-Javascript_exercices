@@ -57,14 +57,8 @@ function multiRand(n) {
 
 //Exercice 4.4
 
+  //Exercice 4.4.1
 
-const avg = randNumbers;
-
-function average(arr){
-  Math.min.apply(null, arraFunction);
-  Math.max.apply(null, arraFunction);
-}
-console.log(average(arraFunction));
 
 
 //Exercice 4.5
@@ -88,6 +82,12 @@ console.log("Calculating the distance between two points (1,1)-(2,2): " +Distanc
 //Exercice 4.6
 
   //Exercice 4.6.1
+
+/**
+ * start/end : will remember the time the program starts/end its execution
+ * 0 = 1 / basic condition
+ * @param {Number} a continue to find the factorial of this number by calling the same factorial function again and again until we reached 0.
+ */
 let start, end;
 start = new Date().getTime();
 
@@ -106,15 +106,18 @@ end = new Date().getTime();
 console.log(end);
 
   //Exercice 4.6.2
-
-  function factorialB(b) 
-{
-  // Si nbr = 0 la factorielle retournera 1
+/**
+ * If nbr = 0 the factorial will return 1
+ * @param {Number} b 
+ * @returns call the recursive procedure again
+ */
+  function factorialB(b) {
+  
   if (b === 0)
   {
      return 1;
   }
-  // appelez à nouveau la procédure récursive
+  
   return b * fact(b-1);
 }
 console.log(fact(rand10()));
