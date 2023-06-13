@@ -26,6 +26,9 @@ console.log(new Dog("Dog").sayHello());
 //Exercice 6.4
 
 class Person {
-    
+    constructor(name, firstname){
+        this.name = name;
+        this.firstname = firstname;
+    }
 }
 
