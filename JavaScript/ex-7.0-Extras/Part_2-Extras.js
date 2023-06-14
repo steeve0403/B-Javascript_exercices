@@ -1,3 +1,7 @@
+
+
+//Exercice 7.4 = Pizza flavor
+
 const readlineSync = require("readline-sync");
 
 const fs = require('fs');

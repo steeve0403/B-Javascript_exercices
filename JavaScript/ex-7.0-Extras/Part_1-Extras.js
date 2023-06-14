@@ -43,28 +43,50 @@ function divisors(d){
         if(d % i === 0){
             listDiviseur.push(i);
         }
-        /*else{
-            console.log("It's a prime number");
-        }*/
     }
 return listDiviseur;
 }
+
 const div = readlineSync.question("Choose a number you would like to know its dividers ");
- let seriesDivisors = divisors(div);
+let seriesDivisors = divisors(div);
 console.log(seriesDivisors);
-
-//Exercice 7.4
-
 
 //Exercice 7.5
 
-function altSort(arr){
-    let arrayL = arr.length;
-    let smallNbr = arr[0];
-        for(i = 0; i < arrayL; i++){
-            if(arr[i] < smallNbr){
-                smallNbr = arr[i];
-            }
-        }
-        return smallNbr;
+function rand10(max){
+    return Math.floor(Math.random()*(max + 1))
 }
+
+const soluceRand10 = rand10(100);
+console.log(soluceRand10);
+
+function multiRand(n){
+    const result = new Array();
+    for (let a = 0; a < n; a++){
+        result.push(rand10(100));
+    }
+    return result;
+}
+
+const soluceMultiRand = multiRand(rand10(100));
+console.log(soluceMultiRand);
+
+
+function altSort(arr) {
+
+    let arrayL = arr.length;
+  
+    for (let i = 0; i < arrayL - 1; i++){
+      for (let j = 0; j < arrayL - i - 1; j++){
+      if (arr[j] > arr[j + 1]){
+          let temp = arr[j];
+          arr[j] = arr[j + 1];
+          arr[j + 1] = temp;
+          }
+      }
+  } 
+return arr;
+}
+    const resultAltSort = altSort(multiRand(rand10(100)));
+    console.log(resultAltSort);
+  
