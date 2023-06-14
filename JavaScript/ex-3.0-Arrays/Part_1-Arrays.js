@@ -10,7 +10,7 @@ let sumB = 0;
     //Exercice 3.1.1 => reduce()
 
 let resultA = arrayA.reduce((a, b)=> {
-    return a + b;    
+    return a + b;   
 });
 console.log(resultA);
 
